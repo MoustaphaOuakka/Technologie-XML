@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT biblio (etudient+) >
+<!ELEMENT etudient (livre+) >
+
+<!-- EMPTY c'est pour dir que c'est un element vide -->
+<!ELEMENT livre EMPTY > 
+
+<!-- Pour declarer une liste d'attrebute -->
+<!ATTLIST etudient 
+            code NMTOKEN #REQUIRED
+            nom CDATA #REQUIRED
+            prenom CDATA #REQUIRED
+            age NMTOKEN #IMPLIED
+>
+<!ATTLIST livre 
+            id NMTOKEN #REQUIRED
+            titre CDATA #REQUIRED
+            dateEmprunt CDATA #REQUIRED
+            rendu (Oui|Non) "Non"
+            >

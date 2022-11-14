@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+    => la declaration de type de document (DTD) qui permet de definir la structure logique du document et sa validité.
+    => le nom de fichie DTD est 'produit.dtd'
+-->
+<!DOCTYPE biblio SYSTEM "bibliotheque-DTD.dtd">
+<!-- 
+    Une transformation définie par une feuille de style (CSS ou XSL) qui permet de définir la présentation.
+-->
+<?xml-stylesheet type="text/xsl" href="bibliotheque-Styleseet.xsl"?>
+
+<biblio>
+    <etudient code="12" nom="Ouakka" prenom="Moustapha" age="23">
+        <livre id="L1" titre="Physique" dateEmprunt="18-02-2021"/>
+    </etudient>
+    <etudient code="21" nom="Hamdaoui" prenom="Amine">
+        <livre id="L3" titre="Mecanique" dateEmprunt="19-04-2020" rendu="Oui"/>
+    </etudient>
+</biblio>
+
+
+
+
+
+
